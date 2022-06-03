@@ -2,7 +2,8 @@ import React from 'react';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import './App.css';
-import { Grid } from '@mui/material';
+import Grid from '@mui/material/Grid';
+import Button from '@mui/material/Button';
 
 import logo from './logo.svg';
 
@@ -75,7 +76,31 @@ function App() {
             }}}
           />
         </Grid>
-
+        <Grid
+          container
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          sx={{
+            p: 2,
+          }}
+        >
+          <Box sx={{ p: 2 }}>
+            <Button>
+              RESET
+            </Button>
+          </Box>
+          <Box sx={{ p: 2 }}>
+            <Button>
+              STOP
+            </Button>
+          </Box>
+          <Box sx={{ p: 2 }}>
+            <Button>
+              START
+            </Button>
+          </Box>
+        </Grid>
       </div>
     </div>
   );
